@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21  # Default FTP port
           local-dir: ./  # The local directory to deploy
-          server-dir:/transfunnel/  # The remote directory to deploy to
+          server-dir: /transfunnel/  # The remote directory to deploy to
           
       - name: Deploy to FTP
         run: |
