@@ -19,10 +19,10 @@ jobs:
       - name: Set up FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          ftp-port: 21  # Default FTP port
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21  # Default FTP port
           local-dir: ./  # The local directory to deploy
           remote-dir: /home/mouufx4q0aan/public_html/cicdtest/  # The remote directory to deploy to
           
