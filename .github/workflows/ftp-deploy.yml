@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21  # Default FTP port
           local-dir: ./  # The local directory to deploy
-          remote-dir: /home/mouufx4q0aan/public_html/cicdtest/  # The remote directory to deploy to
+          server-dir: /home/mouufx4q0aan/public_html/cicdtest/  # The remote directory to deploy to
           
       - name: Deploy to FTP
         run: |
